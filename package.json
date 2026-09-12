@@ -1,0 +1,11 @@
+{
+  "name": "bite-the-watermelon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A playful 2-player relationship self-reflection game with a hidden watermelon scoring system.",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  },
+  "license": "MIT"
+}

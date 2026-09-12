@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bite the Watermelon 🍉 — a 2-player reflection game</title>
+<meta name="description" content="A playful 2-player relationship self-reflection game. You don't know what the question is testing... until you bite the watermelon." />
+
+<!-- Fonts: Fredoka for juicy display headlines, Manrope for clean body/UI text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating watermelon-seed background, purely decorative -->
+  <canvas id="seedCanvas" aria-hidden="true"></canvas>
+
+  <div class="rind-glow" aria-hidden="true"></div>
+
+  <div class="stage">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">🍉</span>
+        <span class="brand-name">Bite the Watermelon</span>
+      </div>
+      <button id="musicToggle" class="icon-btn" type="button" aria-pressed="false" title="Toggle background music">
+        <span id="musicIcon">🔈</span>
+      </button>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer class="foot-note">
+      For fun and self-reflection only — not a psychological or relationship diagnosis.
+    </footer>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="scoring.js"></script>
+  <script src="audio.js"></script>
+  <script src="seeds-bg.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
